@@ -19,7 +19,7 @@ curl -X POST http://127.0.0.1:8000/blur -F 'ksize_height=45' -F 'ksize_width=45'
 ```
 
 
-You can also send the image as a base64 encoded data like so  
+You can also send the image as a base64 encoded data as `application/x-www-form-urlencoded` like so  
 ```bash
 base64 image.png | curl -X POST http://127.0.0.1:8000/blur -d @- | base64 -d > image_blurred.png
 ```
