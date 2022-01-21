@@ -1,0 +1,2 @@
+[debug]
+limits = { string = 52428800 }
